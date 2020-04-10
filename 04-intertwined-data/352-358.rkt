@@ -52,9 +52,9 @@
         [else
          (match ex
            [(? add?) (make-add (subst (add-left ex) sym num)
-                           (subst (add-right ex) sym num))]
+                               (subst (add-right ex) sym num))]
            [(? mul?) (make-mul (subst (mul-left ex) sym num)
-                           (subst (mul-right ex) sym num))])]))
+                               (subst (mul-right ex) sym num))])]))
 
 ; =================== End of exercise ==================
 
@@ -199,3 +199,111 @@
 
 ; =================== End of exercise ===================
 
+; ==================== Exercise 357 =====================
+
+; BSL-fun-expr Symbol Symbol BSL-fun-expr -> Number
+; determine the value of ex, evaluate function defintions
+; f - function name
+; x - function paramater
+; b - function body
+(check-error (eval-definition1 'f
+                               'f 'x 1))
+
+(check-expect (eval-definition1
+               (make-fun 'f 1) 'f 'x 1)
+              1)
+(check-error (eval-definition1
+              (make-fun 'g 1) 'f 'x 1))
+(check-expect (eval-definition1 1
+                                'f 'x 1)
+              1)
+(check-expect (eval-definition1
+               (make-add 1 (make-mul 2 3))
+               'f 'x 1)
+              7)
+(check-expect (eval-definition1
+               (make-fun 'f (make-add 1 1))
+               'f 'x (make-add 'x 'x))
+              4)
+(check-expect (eval-definition1
+               (make-add
+                (make-fun 'f (make-add 1 1))
+                4)
+               'f 'x (make-add 'x 'x))
+              8)
+(check-expect (eval-definition1
+               (make-fun 'f
+                         (make-fun 'f 4))
+               'f 'x (make-add 'x 'x))
+              16)
+(check-expect (eval-definition1
+               (make-mul (make-fun 'f
+                                   (make-fun 'f 4))
+                         (make-add 4
+                                   (make-fun 'f (make-add 4 5))))
+               'f 'x (make-add 'x 'x))
+              352)
+; construct an input for eval-definition1 that causes it to run forever
+#;(check-error (eval-definition1
+              (make-fun 'f 5) 
+              'f 
+              'x 
+              (make-fun 'f 5)))
+
+; (define (eval-definition1 ex f x b) 0) ;stub
+
+(define (eval-definition1 ex f x b)
+  (match ex
+    ([? number?] ex)
+    ([? symbol?]
+     (error "no variable assignment"))
+    ([? fun?]
+     (local ((define argument (eval-definition1 (fun-expression ex) f x b))
+             (define fun-name-is-defined? (equal? (fun-name ex) f)))
+       (if fun-name-is-defined?
+           (eval-definition1 (subst b x argument) f x b)
+           (error "function undefined"))))
+    ([? add?] (+ (eval-definition1 (add-left ex) f x b)
+                 (eval-definition1 (add-right ex) f x b)))
+    ([? mul?] (* (eval-definition1 (mul-left ex) f x b)
+                 (eval-definition1 (mul-right ex) f x b)))))
+
+; =================== End of exercise ===================
+
+; ==================== Exercise 358 =====================
+
+(define-struct fun-def [name parameter body])
+; BSL-fun-def is a structure:
+;  - (make-fun-def (Symbol Symbol BSL-fun-expression)
+
+; (define (f x) (+ 3 x))
+(define f (make-fun-def 'f 'x (make-add 3 'x)))
+
+;(define (g y) (f (* 2 y)))
+(define g (make-fun-def 'g 'y (make-fun 'f (make-mul 2 'y))))
+
+;(define (h v) (+ (f v) (g v)))
+(define h (make-fun-def 'h 'v (make-add (make-fun 'f 'v) (make-fun 'g 'v))))
+
+
+; BSL-fun-def* is one of:
+; - '()
+; - (cons BSL-fun-def '())
+
+(define da-fgh (list f g h))
+
+; BSL-fun-def* Symbol -> BSL-fun-def
+; retrieves the definition of f in da
+; signals an error if there is none
+(check-expect (lookup-def da-fgh 'g) g)
+(check-error (lookup-def da-fgh 'z))
+
+(define (lookup-def da f)
+  (local ((define result (filter (lambda (el)
+            (equal? (fun-def-name el) f))
+          da)))
+    (if (empty? result)
+        (error "definition not found")
+        (first result))))
+
+; =================== End of exercise ===================
