@@ -7,6 +7,11 @@
 (define-struct add [left right])
 (define-struct mul [left right])
 
+; A BSL-expr is one of: 
+; – Number 
+; – (make-add BSL-var-expr BSL-var-expr)
+; – (make-mul BSL-var-expr BSL-var-expr)
+
 ; A BSL-var-expr is one of: 
 ; – Number
 ; – Symbol 
@@ -117,6 +122,7 @@
 ; BSL-var-expr AL -> Number
 
 (check-expect (eval-variable* (make-add 1 1) VARS) 2)
+(check-error (eval-variable* (make-add "a" 1) VARS))
 (check-expect (eval-variable*
                (make-add (make-add 'x 5)
                          (make-add 'y
@@ -129,10 +135,67 @@
   (local ((define (replace-vars ex da)
             (cond [(empty? da) ex]
                   [else
-                   (local ((define parsed-expression
-                             (subst ex (first (first da)) (second (first da)))))
-                     (eval-variable* parsed-expression (rest da)))])))
+                   (local ((define subst-expression
+                             (subst ex
+                                    (first (first da))
+                                    (second (first da)))))
+                     (eval-variable* subst-expression (rest da)))])))
     (eval-variable (replace-vars ex da))))
 
 ; =================== End of exercise ==================
+
+; ==================== Exercise 355 ====================
+
+; BSL-var-expr AL -> Number
+(check-expect (eval-var-lookup (make-add 1 1) VARS) 2)
+(check-error (eval-var-lookup (make-add "a" 1) VARS))
+(check-expect (eval-var-lookup
+               (make-add (make-add 'x 5)
+                         (make-add 'y
+                                   (make-add 'y 5))) VARS)
+              24)
+
+; (define (eval-var-lookup e da) 0) ;stub
+
+(define (eval-var-lookup e da)
+  (local ((define (find-syms-val sym lookup)
+            (second (assq sym lookup))))
+    (match e
+      [(? number?) e]
+      [(? symbol?) (find-syms-val e da)]
+      [(? add?) (+ (eval-var-lookup (add-left e) da)
+                   (eval-var-lookup (add-right e) da))]
+      [(? mul?) (* (eval-var-lookup (mul-left e) da)
+                   (eval-var-lookup (mul-right e) da))])))
+
+
+; =================== End of exercise ===================
+
+; ==================== Exercise 356 =====================
+
+; Fun is a structure:
+;  - (make-fun 'f (make-add Symbol BSL-fun-expr))
+(define-struct fun [name expression])
+
+; A BSL-fun-expr is one of: 
+; – Number
+; – Symbol 
+; – (make-add BSL-fun-expr BSL-fun-expr)
+; – (make-mul BSL-fun-expr BSL-fun-expr)
+; - (make-fun Symbol BSL-fun-expr)
+
+; (k (+ 1 1))
+(make-fun 'k (make-add 1 1))
+
+;(* 5 (k (+ 1 1)))
+(make-mul 5 (make-fun 'k
+                      (make-add 1 1)))
+
+; (* (i 5) (k (+ 1 1)))
+(make-mul
+ (make-fun 'i 5)
+ (make-fun 'k
+           (make-add 1 1)))
+
+; =================== End of exercise ===================
 
