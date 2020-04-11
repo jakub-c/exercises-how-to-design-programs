@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 352-355) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 352-358) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 
 ; ### Data definitions
@@ -245,10 +245,10 @@
               352)
 ; construct an input for eval-definition1 that causes it to run forever
 #;(check-error (eval-definition1
-              (make-fun 'f 5) 
-              'f 
-              'x 
-              (make-fun 'f 5)))
+                (make-fun 'f 5) 
+                'f 
+                'x 
+                (make-fun 'f 5)))
 
 ; (define (eval-definition1 ex f x b) 0) ;stub
 
@@ -300,10 +300,188 @@
 
 (define (lookup-def da f)
   (local ((define result (filter (lambda (el)
-            (equal? (fun-def-name el) f))
-          da)))
+                                   (equal? (fun-def-name el) f))
+                                 da)))
     (if (empty? result)
         (error "definition not found")
         (first result))))
+
+; =================== End of exercise ===================
+
+; ==================== Exercise 359 =====================
+
+; BSL-fun-expression BSL-fun-def* -> Number
+; produce the result that DrRacket shows if you evaluate ex
+; in the interactions area,
+; assuming the definitions area contains da
+(define function-defitinions1
+  (list (make-fun-def 'f 'x 1)))
+(define function-defitinions2
+  (list (make-fun-def 'f 'x (make-add 'x 'x))))
+
+(check-error (eval-function*
+              'f function-defitinions1))
+
+(check-expect (eval-function*
+               (make-fun 'f 1) function-defitinions1)
+              1)
+(check-error (eval-function*
+              (make-fun 'g 1) function-defitinions1))
+(check-expect (eval-function* 1 function-defitinions1)
+              1)
+(check-expect (eval-function*
+               (make-add 1 (make-mul 2 3)) function-defitinions1)
+              7)
+(check-expect (eval-function*
+               (make-fun 'f (make-add 1 1)) function-defitinions2)
+              4)
+(check-expect (eval-function*
+               (make-add
+                (make-fun 'f (make-add 1 1))
+                4)
+               function-defitinions2)
+              8)
+(check-expect (eval-function*
+               (make-fun 'f
+                         (make-fun 'f 4))
+               function-defitinions2)
+              16)
+(check-expect (eval-function*
+               (make-mul (make-fun 'f
+                                   (make-fun 'f 4))
+                         (make-add 4
+                                   (make-fun 'f (make-add 4 5))))
+               function-defitinions2)
+              352)
+; construct an input for eval-function* that causes it to run forever
+#;(check-error (eval-function*
+                (make-fun 'f 5) 
+                'f 
+                'x 
+                (make-fun 'f 5)))
+
+; (define (eval-function* ex da) 0) ;stub
+
+(define (eval-function* ex da)
+  (match ex
+    [(? number?) ex]
+    [(? symbol?)
+     (error "no variable assignment")]
+    [(? fun?) (local ((define argument (fun-expression ex))
+                      (define current-function-name (fun-name ex))
+                      (define found-definition (lookup-def da current-function-name))
+                      (define found-body (fun-def-body found-definition))
+                      (define found-parameter (fun-def-parameter found-definition)))
+                (eval-function* (subst found-body found-parameter argument) da))]
+    [(? add?) (+ (eval-function* (add-left ex) da)
+                 (eval-function* (add-right ex) da))]
+    [(? mul?) (* (eval-function* (mul-left ex) da)
+                 (eval-function* (mul-right ex) da))]))
+    
+; =================== End of exercise ===================
+
+; ==================== Exercise 360 =====================
+
+(define-struct const-def [name value])
+; BSL-const-def is a structure:
+;  - (make-const-def Symbol Number)
+
+; BSL-da-all is one of:
+; - '()
+; - (cons BSL-fun-def BSL-da-all)
+; - (cons BSL-const-def BSL-da-all)
+
+(define example-all-definitions
+  (list (make-const-def 'x 10)
+        (make-const-def 'y 11)
+        (make-fun-def 'f 'x (make-add 'x 'x))
+        (make-fun-def 'g 'h (make-mul (make-add 1 'h) 'h))))
+
+; BSL-da-all Symbol -> BSL-const-def
+; produce the representation of a constant definition whose name is x,
+; otherwise the function signals an error
+(check-expect (lookup-con-def example-all-definitions 'x) (make-const-def 'x 10))
+(check-error (lookup-con-def example-all-definitions 'a))
+
+;(define (lookup-con-def da x) (make-const-def 'x 1)) ;stub
+
+(define (lookup-con-def da x)
+  (local ((define result
+            (filter (lambda (el)
+                      (match el
+                        [(? const-def?) (equal? (const-def-name el) x)]
+                        [else #false]))
+                    da)))
+    (if (empty? result)
+        (error "variable definition not found")
+        (first result))))
+
+; BSL-data-all Symbol -> BSL-fun-expression
+; produce the representation of a function definition whose name is f,
+; if such a piece of data exists in da
+(check-error (lookup-fun-def example-all-definitions 'z))
+(check-expect (lookup-fun-def example-all-definitions 'f)
+              (make-fun-def 'f 'x (make-add 'x 'x)))
+(check-expect (lookup-fun-def example-all-definitions 'g)
+              (make-fun-def 'g 'h (make-mul (make-add 1 'h) 'h)))
+
+; (define (lookup-fun-def da f) (make-fun-def 'f 'x (make-add 'x 1))) ;stub
+(define (lookup-fun-def da f)
+  (local ((define result
+            (filter (lambda (el)
+                      (match el
+                        [(? fun-def?) (equal? (fun-def-name el) f)]
+                        [else #false]))
+                    da)))
+    (if (empty? result)
+        (error "function definition not found")
+        (first result))))
+
+; =================== End of exercise ===================
+
+; ==================== Exercise 361 =====================
+
+; BSL-fun-expression BSL-da-all -> Number
+; produce the same value that DrRacket shows
+; if the expression is entered at the prompt
+; in the interactions area and the definitions area contains
+; the appropriate definitions
+(check-expect (eval-all 1 example-all-definitions)
+              1)
+(check-expect (eval-all 'y example-all-definitions)
+              11)
+(check-expect (eval-all (make-add 1 1) example-all-definitions)
+              2)
+(check-expect (eval-all (make-add 'x 1) example-all-definitions)
+              11)
+(check-expect (eval-all (make-add 'x
+                                  (make-mul 'x 'y))
+                        example-all-definitions)
+              120)
+(check-expect (eval-all (make-fun 'f 1) example-all-definitions)
+              2)
+(check-expect (eval-all (make-fun 'f (make-add 1 1)) example-all-definitions)
+              4)
+(check-expect (eval-all (make-fun 'f
+                                  (make-add 1
+                                            (make-fun 'f 4))) example-all-definitions)
+              18)
+
+; (define (eval-all ex da) 0) ;stub
+(define (eval-all ex da)
+  (match ex
+    [(? number?) ex]
+    [(? symbol?)
+     (local ((define const-definitions
+               (filter (lambda (el) (const-def? el)) da)))
+       (const-def-value (lookup-con-def const-definitions ex)))]
+    [(? fun?)
+     (local ((define fun-definitions
+               (filter (lambda (el) (fun-def? el)) da)))
+       (eval-function* ex fun-definitions))]
+    [(? add?) (+ (eval-all (add-left ex) da)
+                 (eval-all (add-right ex) da))]
+    [(? mul?) (* (eval-all (mul-left ex) da)
+                 (eval-all (mul-right ex) da))]))
 
 ; =================== End of exercise ===================
