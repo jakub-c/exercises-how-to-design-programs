@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 352-358) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 352-361) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 
 ; ### Data definitions
@@ -54,7 +54,8 @@
            [(? add?) (make-add (subst (add-left ex) sym num)
                                (subst (add-right ex) sym num))]
            [(? mul?) (make-mul (subst (mul-left ex) sym num)
-                               (subst (mul-right ex) sym num))])]))
+                               (subst (mul-right ex) sym num))]
+           [else (error "unhandled subst type")])]))
 
 ; =================== End of exercise ==================
 
@@ -300,7 +301,9 @@
 
 (define (lookup-def da f)
   (local ((define result (filter (lambda (el)
-                                   (equal? (fun-def-name el) f))
+                                   (if (fun-def? el)
+                                       (equal? (fun-def-name el) f)
+                                       #false))
                                  da)))
     (if (empty? result)
         (error "definition not found")
@@ -317,7 +320,8 @@
 (define function-defitinions1
   (list (make-fun-def 'f 'x 1)))
 (define function-defitinions2
-  (list (make-fun-def 'f 'x (make-add 'x 'x))))
+  (list (make-fun-def 'f 'x (make-add 'x 'x))
+        (make-fun-def 'g 'x (make-add 'x (make-fun 'f 4)))))
 
 (check-error (eval-function*
               'f function-defitinions1))
@@ -353,30 +357,76 @@
                                    (make-fun 'f (make-add 4 5))))
                function-defitinions2)
               352)
+(check-expect (eval-function* (make-fun 'g 3) function-defitinions2) 11)
 ; construct an input for eval-function* that causes it to run forever
 #;(check-error (eval-function*
                 (make-fun 'f 5) 
                 'f 
                 'x 
                 (make-fun 'f 5)))
+;;;;;;
+; this section helper has been added to make the refactoring of
+; eval-function* easier while working on the ex. 362
+; this is a referesher of structs, conts and structs that were needed
+;;;;;;
 
 ; (define (eval-function* ex da) 0) ;stub
+#;(define function-defitinions2
+    (list (make-fun-def 'f 'x (make-add 'x 'x))
+          (make-fun-def 'g 'x (make-add 'x (make-fun 'f 4)))))
+; (define-struct fun-def [name parameter body])
+; (define-struct fun [name expression])
+#;(check-expect (subst (make-add 'x
+                                 (make-add 'x 5))
+                       'x 4)
+                (make-add 4
+                          (make-add 4 5)))
+;;;;;;
+; end of helper section
+;;;;;;
 
 (define (eval-function* ex da)
   (match ex
     [(? number?) ex]
     [(? symbol?)
-     (error "no variable assignment")]
+     (const-def-value (lookup-con-def da ex))]
     [(? fun?) (local ((define argument (fun-expression ex))
                       (define current-function-name (fun-name ex))
                       (define found-definition (lookup-def da current-function-name))
                       (define found-body (fun-def-body found-definition))
                       (define found-parameter (fun-def-parameter found-definition)))
-                (eval-function* (subst found-body found-parameter argument) da))]
+                (eval-function* (subst.v2 found-body found-parameter argument) da))]
     [(? add?) (+ (eval-function* (add-left ex) da)
                  (eval-function* (add-right ex) da))]
     [(? mul?) (* (eval-function* (mul-left ex) da)
                  (eval-function* (mul-right ex) da))]))
+
+(check-expect (subst.v2 (make-add 'x
+                                  (make-add 'x 5))
+                        'x 4)
+              (make-add 4
+                        (make-add 4 5)))
+(check-expect (subst.v2 (make-fun 'f (make-add 'x 6))
+                        'x 4)
+              (make-fun 'f (make-add 4 6)))
+
+; BSL-var-expr Symbol Number -> BSL-var-expr
+; produces a BSL-var-expr like `ex`
+; with all occurrences of `sym` replaced by `num`
+(define (subst.v2 ex sym num)
+  (cond [(number? ex) ex]
+        [(symbol? ex)
+         (if (equal? ex sym)
+             num
+             ex)]
+        [else
+         (match ex
+           [(? add?) (make-add (subst.v2 (add-left ex) sym num)
+                               (subst.v2 (add-right ex) sym num))]
+           [(? mul?) (make-mul (subst.v2 (mul-left ex) sym num)
+                               (subst.v2 (mul-right ex) sym num))]
+           [(? fun?) (make-fun (fun-name ex) (subst.v2 (fun-expression ex) sym num))]
+           [else (error "unhandled subst type")])]))
     
 ; =================== End of exercise ===================
 
@@ -466,22 +516,104 @@
                                   (make-add 1
                                             (make-fun 'f 4))) example-all-definitions)
               18)
+(check-expect (eval-all (make-fun 'f (make-add 'x 1)) example-all-definitions)
+              22)
 
 ; (define (eval-all ex da) 0) ;stub
 (define (eval-all ex da)
   (match ex
     [(? number?) ex]
     [(? symbol?)
-     (local ((define const-definitions
-               (filter (lambda (el) (const-def? el)) da)))
-       (const-def-value (lookup-con-def const-definitions ex)))]
+     (const-def-value (lookup-con-def da ex))]
     [(? fun?)
-     (local ((define fun-definitions
-               (filter (lambda (el) (fun-def? el)) da)))
-       (eval-function* ex fun-definitions))]
+     (eval-function* ex da)]
     [(? add?) (+ (eval-all (add-left ex) da)
                  (eval-all (add-right ex) da))]
     [(? mul?) (* (eval-all (mul-left ex) da)
                  (eval-all (mul-right ex) da))]))
+; =================== End of exercise ===================
 
+; ==================== Exercise 362 =====================
+(define (atom? a)
+  (or (number? a)
+      (string? a)
+      (symbol? a)
+      (boolean? a)))
+
+; S-expr -> BSL-expr
+(define (parse s)
+  (cond
+    [(atom? s) (parse-atom s)]
+    [else (parse-sl s)]))
+ 
+; SL -> BSL-expr 
+(define (parse-sl s)
+  (local ((define L (length s)))
+    (cond
+      ;[(< L 3) (error "expression length error")]
+      [(and (= L 1) (symbol? (first s))) (first s)]
+      [(and (= L 2) (symbol? (first s)))
+       (make-fun (first s) (parse (second s)))]
+      [(and (= L 3) (symbol? (first s)))
+       (cond
+         [(symbol=? (first s) '+)
+          (make-add (parse (second s)) (parse (third s)))]
+         [(symbol=? (first s) '*)
+          (make-mul (parse (second s)) (parse (third s)))]
+         [else (error "unsupported operation")])]
+      [else (error "parsing error")])))
+ 
+; Atom -> BSL-expr 
+(define (parse-atom s)
+  (cond
+    [(number? s) s]
+    [(string? s) (error "value type error")]
+    [(symbol? s) s]))
+
+
+(check-expect (parse-da-sl (list `(define x 1)
+                                 `(define (f x) (+ x x))))
+              (list (make-const-def 'x 1)
+                    (make-fun-def 'f 'x (make-add 'x 'x))))
+(define (parse-da-sl s)
+  (map (lambda (el)
+         (match el
+           [(list keyword (list fn-name fn-param) exp)
+            (make-fun-def fn-name fn-param (parse exp))]
+           [(list keyword name value)
+            (make-const-def name value)]
+           [else (error "can't parse the definitions")]))
+       s))
+
+; S-expr SL -> Number
+; interpret and evaluate quoted expression and definitions
+(check-expect (interpreter 1 '()) 1)
+(check-expect (interpreter `(* (+ 1 1) 2) '()) 4)
+(check-expect (interpreter `(* (+ 1 x) 3) `((define x 4))) 15)
+(check-error (interpreter `(f 1) `()))
+(check-expect (interpreter `(f (+ 1 1))
+                           `((define (f x) (+ x x))))
+              4)
+(check-expect (interpreter `(* (f (+ 1 1))
+                               y)
+                           `((define (f x) (+ x x)) (define y 2)))
+              8)
+(check-expect (interpreter `(area-of-circle 4)
+                           `((define close-to-pi 3.14)
+                             (define (area-of-circle r)
+                               (* close-to-pi (* r r)))))
+              50.24)
+(check-expect (interpreter `(volume-of-10-cylinder 4)
+                           `((define close-to-pi 3.14)
+                             (define (area-of-circle r)
+                               (* close-to-pi (* r r)))
+                             (define (volume-of-10-cylinder r)
+                               (* 10 (area-of-circle r)))))
+              502.4)
+
+;(define (interpreter ex da) 1) ;stub
+
+(define (interpreter ex da)
+  (eval-all (parse ex) (parse-da-sl da)))
+  
 ; =================== End of exercise ===================
