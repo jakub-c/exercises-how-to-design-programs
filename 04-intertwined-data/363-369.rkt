@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname |363|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-365) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 ; An Xexpr.v0 (short for X-expression) is a one-item list:
 ;   (cons Symbol '())
 
@@ -163,3 +163,49 @@
          (if (list-of-attributes? loa-or-x)
              (rest optional-loa+content)
              optional-loa+content))])))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 367 ====================
+
+#; (define (xexpr-attr xe)
+  (local ((define optional-loa+content (rest xe)))
+    (cond
+      [(empty? optional-loa+content) ...]
+      [else (... (first optional-loa+content)
+                 ... (rest optional-loa+content) ...
+                 ... (xexpr-attr optional-loa+content) ...)])))
+
+; it doesn't make sense to make a self-reference here becase
+; the items in the list have different functions (name, body, attributes)
+; and are also of a different type
+; - we wouldn't get too much value out of self reference in this case
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 368 ====================
+
+; XexprContent is one of:
+;  - (cons [List-of Attribute] '())
+;  - (cons '() Xexpr.v2)
+;  - (cons [List-of Attribute] Xexpr.v2)
+
+; ==================== Exercise 369 ====================
+
+; [List-of Attributes] Symbol -> [Maybe String]
+; if the attributes list associates the symbol with a string,
+; the function retrieves this string
+(define input-369 '((attr1 "a") (attr2 "b")))
+
+(check-expect (find-attr input-369 'attr1) "a")
+(check-expect (find-attr input-369 'attr2) "b")
+(check-expect (find-attr input-369 'attr3) #false)
+
+; (define (find-attr loa sym) "") ;stub
+
+(define (find-attr loa sym)
+  (local ((define search-result (assq sym loa)))
+    (cond [(false? search-result) #false]
+          [else (second search-result)])))
+
+; =================== End of exercise ==================
