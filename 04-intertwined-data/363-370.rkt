@@ -1,6 +1,8 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-365) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-369) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+(require 2htdp/abstraction)
+
 ; An Xexpr.v0 (short for X-expression) is a one-item list:
 ;   (cons Symbol '())
 
@@ -85,7 +87,7 @@
 (define e3 '(machine () (action)))
 (define e4 `(machine ,a0 (action) (action)))
 
-; Xexpr.v2 -> [List-of Attribute]
+; Xexpr.v2.1 -> [List-of Attribute]
 ; retrieves the list of attributes of xe
 ; (define (xexpr-attr xe) '()) ;stub
 (check-expect (xexpr-attr e0) '())
@@ -107,7 +109,7 @@
         [else (... (first optional-loa+content)
                    ... (rest optional-loa+content) ...)]))) ; template-v2
 
-; [List-of Attribute] or Xexpr.v2 -> ???
+; [List-of Attribute] or Xexpr.v2.1 -> ???
 ; determines whether x is an element of [List-of Attribute]
 ; #false otherwise
 #;(define (list-of-attributes? x)
@@ -124,7 +126,7 @@
              loa-or-x
              '()))]))) ; template-v3
 
-; [List-of Attribute] or Xexpr.v2 -> Boolean
+; [List-of Attribute] or Xexpr.v2.1 -> Boolean
 ; is x a list of attributes
 (define (list-of-attributes? x)
   (cond
@@ -135,7 +137,7 @@
 
 ; ==================== Exercise 366 ====================
 
-; Xexpr.v2 -> Symbol
+; Xexpr.v2.1 -> Symbol
 ; retrieves the name of xe
 ; (define (xexpr-name xe) '()) ;stub
 
@@ -144,7 +146,7 @@
 
 (define (xexpr-name xe) (first xe))
 
-; Xexpr.v2 -> [List-of [List-of Xexpr.v2.1]]
+; Xexpr.v2.1 -> [List-of [List-of Xexpr.v2.1]]
 ; retrieves the content (body) of xe
 ; (define (xexpr-content xe) '()) ;stub
 
@@ -169,12 +171,12 @@
 ; ==================== Exercise 367 ====================
 
 #; (define (xexpr-attr xe)
-  (local ((define optional-loa+content (rest xe)))
-    (cond
-      [(empty? optional-loa+content) ...]
-      [else (... (first optional-loa+content)
-                 ... (rest optional-loa+content) ...
-                 ... (xexpr-attr optional-loa+content) ...)])))
+     (local ((define optional-loa+content (rest xe)))
+       (cond
+         [(empty? optional-loa+content) ...]
+         [else (... (first optional-loa+content)
+                    ... (rest optional-loa+content) ...
+                    ... (xexpr-attr optional-loa+content) ...)])))
 
 ; it doesn't make sense to make a self-reference here becase
 ; the items in the list have different functions (name, body, attributes)
@@ -187,8 +189,8 @@
 
 ; XexprContent is one of:
 ;  - (cons [List-of Attribute] '())
-;  - (cons '() Xexpr.v2)
-;  - (cons [List-of Attribute] Xexpr.v2)
+;  - (cons '() Xexpr.v2.1)
+;  - (cons [List-of Attribute] Xexpr.v.2.1)
 
 ; ==================== Exercise 369 ====================
 
@@ -207,5 +209,57 @@
   (local ((define search-result (assq sym loa)))
     (cond [(false? search-result) #false]
           [else (second search-result)])))
+
+; =================== End of exercise ==================
+
+; An XWord is '(word ((text String)))
+
+; ==================== Exercise 370 ====================
+
+(define XWord-1 '(word ((text "hello"))))
+(define XWord-2 '(word ((text "world"))))
+(define XWord-3 '(word ((text "!"))))
+
+; Any -> Boolean
+; check whether some ISL+ value is in XWord
+(check-expect (word? XWord-1) #true)
+(check-expect (word? '(word "abc")) #false)
+(check-expect (word? "2") #false)
+(check-expect (word? 'symbol) #false)
+
+; (define (word? w) #false) ;stub
+
+#;(define (word? w)
+    (match w
+      [(list word attr)
+       (and (list? attr)
+            (equal? 'text (first (first attr)))
+            (string? (second (first attr))))]
+      [_ #false]))
+
+; we're sure that text is the only attribute of XWord
+; so we can refactor the function above to this
+; specific pattern matching
+(define (word? w)
+  (match w
+    [(list 'word (list (list 'text (? string?))))
+     #true]
+    [_ #false]))
+
+; XWord -> [Maybe String]
+; extract the value of the only attribute of an instance of XWord
+(check-expect (word-text XWord-1) "hello")
+(check-expect (word-text '(word)) #false)
+(check-expect (word-text "abc") #false)
+
+; (define (word-text w) "abc") ;stub
+
+(define (word-text w)
+  (match w
+    [(list 'word (list (list 'text text-value)))
+     (if (word? w)
+         text-value
+         #false)]
+    [_ false]))
 
 ; =================== End of exercise ==================
