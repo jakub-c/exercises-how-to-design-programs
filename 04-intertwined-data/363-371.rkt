@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-369) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-370) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 
 ; An Xexpr.v0 (short for X-expression) is a one-item list:
@@ -263,3 +263,32 @@
     [_ false]))
 
 ; =================== End of exercise ==================
+
+; ==================== Exercise 371 ====================
+
+; An Xepr.v2.3 is a list:
+; - (cons Symbol Xexpr.v2.3)
+; - (cons word Xexpr.v2.3)
+; - (cons Symbol (cons [List-of Attribute] Xexpr.v2.2))
+
+; An Attribute is a list of two items:
+;   (cons Symbol (cons String '()))
+
+; An XWord is '(word ((text String))).
+
+; =================== End of exercise ==================
+
+; An XEnum.v1 is one of: 
+; – (cons 'ul [List-of XItem.v1])
+; – (cons 'ul (cons Attributes [List-of XItem.v1]))
+; An XItem.v1 is one of:
+; – (cons 'li (cons XWord '()))
+; – (cons 'li (cons Attributes (cons XWord '())))
+
+; – (cons 'ul [List-of XItem.v1]) is also an XExpression because
+; it matches a pattern of: Symbol + list or Words defined in 371
+
+; – (cons 'ul (cons Attributes [List-of XItem.v1])) is also an XExpression
+; becauce it matches the pattern
+; (cons Symbol (cons [List-of Attribute] Xexpr.v2.2)) in 371
+
