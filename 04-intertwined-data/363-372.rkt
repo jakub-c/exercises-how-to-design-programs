@@ -1,7 +1,8 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-370) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-371) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
+(require 2htdp/image)
 
 ; An Xexpr.v0 (short for X-expression) is a one-item list:
 ;   (cons Symbol '())
@@ -292,3 +293,34 @@
 ; becauce it matches the pattern
 ; (cons Symbol (cons [List-of Attribute] Xexpr.v2.2)) in 371
 
+; An XEnum.v1 is one of: 
+; – (cons 'ul [List-of XItem.v1])
+; – (cons 'ul (cons Attributes [List-of XItem.v1]))
+; An XItem.v1 is one of:
+; – (cons 'li (cons XWord '()))
+; – (cons 'li (cons Attributes (cons XWord '())))
+
+; example of XEnum.v1
+(define e0-enum
+  '(ul
+    (li (word ((text "one"))))
+    (li (word ((text "two"))))))
+
+
+; ==================== Exercise 372 ====================
+
+(define BT (circle 2 100 "grey"))
+
+; XItem.v1 -> Image 
+; renders an item as a "word" prefixed by a bullet
+(check-expect (render-item1 '(li (word ((text "hello")))))
+              (beside/align 'center BT (text "hello" 12 'grey)))
+
+(define (render-item1 i)
+  (local ((define content (xexpr-content i))
+          (define element (first content))
+          (define a-word (word-text element))
+          (define item (text a-word 12 'grey)))
+    (beside/align 'center BT item)))
+
+; =================== End of exercise ==================
