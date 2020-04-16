@@ -323,4 +323,11 @@
           (define item (text a-word 12 'grey)))
     (beside/align 'center BT item)))
 
+; explanation of what does (render-item i) do:
+; 1. find the content of a given expression (a word inside <li>)
+; 2. find the first occurence of the <word>
+; 3. get the actual text from the <word>
+; 4. create a image based representation of the found text
+; 5. put the text next to the bullet defined by BT
+
 ; =================== End of exercise ==================
