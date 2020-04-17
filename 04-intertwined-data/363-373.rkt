@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-371) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-372) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 (require 2htdp/image)
 
@@ -309,19 +309,19 @@
 
 ; ==================== Exercise 372 ====================
 
-(define BT (circle 2 100 "grey"))
+(define BT-372 (circle 2 100 "grey"))
 
 ; XItem.v1 -> Image 
 ; renders an item as a "word" prefixed by a bullet
 (check-expect (render-item1 '(li (word ((text "hello")))))
-              (beside/align 'center BT (text "hello" 12 'grey)))
+              (beside/align 'center BT-372 (text "hello" 12 'grey)))
 
 (define (render-item1 i)
   (local ((define content (xexpr-content i))
           (define element (first content))
           (define a-word (word-text element))
           (define item (text a-word 12 'grey)))
-    (beside/align 'center BT item)))
+    (beside/align 'center BT-372 item)))
 
 ; explanation of what does (render-item i) do:
 ; 1. find the content of a given expression (a word inside <li>)
@@ -331,3 +331,88 @@
 ; 5. put the text next to the bullet defined by BT
 
 ; =================== End of exercise ==================
+
+; An XItem.v2 is one of: 
+; – (cons 'li (cons XWord '()))
+; – (cons 'li (cons [List-of Attribute] (list XWord)))
+; – (cons 'li (cons XEnum.v2 '()))
+; – (cons 'li (cons [List-of Attribute] (list XEnum.v2)))
+; 
+; An XEnum.v2 is one of:
+; – (cons 'ul [List-of XItem.v2])
+; – (cons 'ul (cons [List-of Attribute] [List-of XItem.v2]))
+
+; ==================== Exercise 373 ====================
+
+(define SIZE 12) ; font size 
+(define COLOR "grey") ; font color 
+(define BT ; a graphical constant 
+  (beside (circle 3 'solid 'grey) (text " " SIZE COLOR)))
+ 
+; Image -> Image
+; marks item with bullet
+(check-expect (bulletize (text "Hello" SIZE COLOR))
+              (beside/align 'center BT (text "Hello" SIZE COLOR)))
+
+(define (bulletize item)
+  (beside/align 'center BT item))
+ 
+; XEnum.v2 -> Image
+; renders an XEnum.v2 as an image
+(define input-render-enum-1 '(ul
+                              (li (word ((text "hello"))))
+                              (li ((display "block"))
+                                  (word ((text "world"))))))
+(check-expect (render-enum input-render-enum-1)
+              (above/align 'left
+                           (bulletize (text "hello"  SIZE 'black))
+                           (bulletize (text "world"  SIZE 'black))
+                           empty-image))
+
+(define input-render-enum-2 '(ul
+                              (li (word ((text "hello"))))
+                              (li
+                               (ul
+                                (li ((display "block"))
+                                    (word ((text "!"))))))))
+(check-expect (render-enum input-render-enum-2)
+              (above/align 'left
+                           (bulletize (text "hello"  SIZE 'black))
+                           (above/align 'left
+                                        (bulletize
+                                         (bulletize (text "!"  SIZE 'black)))
+                                        empty-image)
+                           empty-image))
+
+
+(define (render-enum xe)
+  (local ((define content (xexpr-content xe))
+          ; XItem.v2 Image -> Image 
+          (define (deal-with-one item so-far)
+            (above/align 'left (render-item item) so-far)))
+    (foldr deal-with-one empty-image content)))
+ 
+; XItem.v2 -> Image
+; renders one XItem.v2 as an image
+(check-expect (render-item '(li (word ((text "hello")))))
+              (bulletize (text "hello"  SIZE 'black)))
+(check-expect (render-item '(li
+                             (ul
+                              (li (word ((text "hello")))))))
+              (above/align 'left
+                           (bulletize
+                            (above/align 'left
+                                         (bulletize (text "hello"  SIZE 'black))
+                                         empty-image))
+                           empty-image))
+
+(define (render-item an-item)
+  (local ((define content (first (xexpr-content an-item))))
+    (bulletize
+     (cond
+       [(word? content)
+        (text (word-text content) SIZE 'black)]
+       [else (render-enum content)]))))
+
+; =================== End of exercise ==================
+
