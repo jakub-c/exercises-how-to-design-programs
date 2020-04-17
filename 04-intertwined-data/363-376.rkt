@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-372) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-373) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 (require 2htdp/image)
 
@@ -413,6 +413,139 @@
        [(word? content)
         (text (word-text content) SIZE 'black)]
        [else (render-enum content)]))))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 374 ====================
+
+; An XItem.v2 is one of: 
+; – (cons 'li (cons XWord '()))
+; – (cons 'li (cons [List-of Attribute] (list XWord)))
+; – (cons 'li (cons XEnum.v2 '()))
+; – (cons 'li (cons [List-of Attribute] (list XEnum.v2)))
+; 
+; An XEnum.v2 is one of:
+; – (cons 'ul [List-of XItem.v2])
+; – (cons 'ul (cons [List-of Attribute] [List-of XItem.v2]))
+
+; An XItem.cons is one of:
+; - (cons 'li (cons Xword '()))
+; - (cons 'li (cons (cons Attribute '())
+;                   (cons Word '())))
+; - (cons 'li (cons XEnum.cons '()))
+; - (cons 'li (cons (cons Attribute '())
+;                   (cons XEnum.cons '()))
+
+; An XEnum.cons is one of:
+; - (cons 'ul (cons XItem.cons '()) '())
+; - (cons 'ui (cons (cons Attribute '())
+;                   (cons XItem.cons '())))
+
+; XEnum.v2 -> Image
+; renders an XEnum.v2 as an image
+(check-expect (render-enum-cons input-render-enum-1)
+              (above/align 'left
+                           (bulletize (text "hello"  SIZE 'black))
+                           (bulletize (text "world"  SIZE 'black))
+                           empty-image))
+
+(check-expect (render-enum-cons input-render-enum-2)
+              (above/align 'left
+                           (bulletize (text "hello"  SIZE 'black))
+                           (above/align 'left
+                                        (bulletize
+                                         (bulletize (text "!"  SIZE 'black)))
+                                        empty-image)
+                           empty-image))
+
+
+(define (render-enum-cons xe)
+  (local ((define content (xexpr-content xe))
+          (define (render-content-enum cnt)
+            (cond [(empty? cnt) empty-image]
+                  [else
+                   (above/align 'left
+                                (render-item-cons (first cnt))
+                                (render-content-enum (rest cnt)))])))
+    (render-content-enum content)))
+ 
+; XItem.v2 -> Image
+; renders one XItem.v2 as an image
+(check-expect (render-item-cons '(li
+                                  (ul
+                                   (li (word ((text "hello")))))))
+              (above/align 'left
+                           (bulletize
+                            (above/align 'left
+                                         (bulletize (text "hello"  SIZE 'black))
+                                         empty-image))
+                           empty-image))
+(check-expect (render-item-cons '(li (word ((text "hello!")))))
+              (bulletize (text "hello!"  SIZE 'black)))
+
+(define (render-item-cons an-item)
+  (local ((define content (first (xexpr-content an-item))))
+    (bulletize
+     (cond
+       [(word? content)
+        (text (word-text content) SIZE 'black)]
+       [else (render-enum-cons content)]))))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 375 ====================
+
+; XItem.v2 -> Image
+; renders one XItem.v2 as an image
+(check-expect (render-item-v.2 '(li (word ((text "hello")))))
+              (bulletize (text "hello"  SIZE 'black)))
+(check-expect (render-item-v.2 '(li
+                                 (ul
+                                  (li (word ((text "hello")))))))
+              (above/align 'left
+                           (bulletize
+                            (above/align 'left
+                                         (bulletize (text "hello"  SIZE 'black))
+                                         empty-image))
+                           empty-image))
+
+(define (render-item-v.2 an-item)
+  (local ((define content (first (xexpr-content an-item))))
+    (cond [(word? content) (bulletize
+                            (text (word-text content) SIZE 'black))]
+          [else (bulletize (render-enum content))])))
+
+; I like both versions, the one with render-item-v.2 might
+; be a bit easier to comprehend though
+; It's covered by the same tests as the original function
+; so I'm confident it works
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 376 ====================
+
+; XEnum.v2 -> Number
+; count all "hello"s in an instance of XEnum.v2
+(define input-render-enum-3 '(ul
+                              (li (word ((text "hello"))))
+                              (li (word ((text "world"))))
+                              (li ((display "block"))
+                                  (word ((text "hello"))))))
+(check-expect (count-hello input-render-enum-3) 2)
+
+; (define (count-hello enum) 0) ;stub
+
+(define (count-hello enum)
+  (local ((define content (xexpr-content  input-render-enum-3)))
+    (for/sum ([xitem content]) (count-hello-xitem xitem))))
+
+(define (count-hello-xitem i)
+  (local ((define xitem-content (first (xexpr-content i))))
+    (cond [(word? xitem-content)
+           (if (string=? "hello" (word-text xitem-content))
+               1
+               0)]
+          [else (count-hello i)])))
 
 ; =================== End of exercise ==================
 
