@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-373) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 363-376) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 (require 2htdp/image)
 
@@ -549,3 +549,40 @@
 
 ; =================== End of exercise ==================
 
+; ==================== Exercise 377 ====================
+
+; XEnum.v2 -> XEnum.v2
+; replace all "hello"s with "bye" in an enumeration
+(define input-render-enum-4 '(ul
+                              (li (word ((text "hello"))))                              
+                              (li (word ((text "world"))))
+                              (li ((display "block"))
+                                  (word ((text "hello"))))))
+(define expect-render-enum-4 '(ul
+                               (li (word ((text "bye"))))
+                               (li (word ((text "world"))))
+                               (li ((display "block"))
+                                   (word ((text "bye"))))))
+(check-expect (replace-hello input-render-enum-4) expect-render-enum-4)
+
+; (define (replace-hello enum) enum) ;stub
+(define (replace-hello enum)
+  (local ((define content (xexpr-content enum)))
+    (cons (xexpr-name enum)
+          (map (lambda (xitem) (replace-in-item xitem)) content))))
+
+; XItem.v2 -> XItem.v2
+; (define (replace-in-item i) i) ;stub
+(define (replace-in-item i)
+  (local ((define xitem-content (first (xexpr-content i))))
+    (cond 
+      [(word? xitem-content)
+         (map (lambda (el)
+                (cond [(word? el)
+                       (if (string=? "hello" (word-text el))
+                           '(word ((text "bye")))
+                           el)]
+                      [else el]))
+              i)])))
+
+; =================== End of exercise ==================
