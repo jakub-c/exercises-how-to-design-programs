@@ -171,3 +171,121 @@
              (intersect (rest son1) son2))]))
 
 ; =================== End of exercise ==================
+
+
+; ==================== Exercise 394 ====================
+
+; [List-of Number] [List-of Number] -> [List-of Number]
+; condition: input lists have to be sorted in ascending order
+; produce a single sorted list of numbers that contains all the numbers
+; on both inputs lists
+; numbers can be repeated in the output
+; (define (merge lon1 lon2) '()) ;stub
+
+(check-expect (merge '(1) '(2)) '(1 2))
+(check-expect (merge '(1) '(1)) '(1 1))
+(check-expect (merge '(1 2) '(3 4)) '(1 2 3 4))
+(check-expect (merge '(3 4) '(1 2)) '(1 2 3 4))
+(check-expect (merge '(1 2 3 4 6) '(5)) '(1 2 3 4 5 6))
+(check-expect (merge '(7) '(1 2 3)) '(1 2 3 7))
+
+; initial implementation
+#;(define (merge lon1 lon2)
+    (cond [(empty? lon1) lon2]
+          [(empty? lon2) lon1]
+          [(= (first lon1) (first lon2))
+           (cons (first lon1)
+                 (cons (first lon2)
+                       (merge (rest lon1) (rest lon2))))]
+          [(> (first lon1) (first lon2))
+           (cons (first lon2)
+                 (merge lon1 (rest lon2)))]
+          [(< (first lon1) (first lon2))
+           (cons (first lon1)
+                 (merge (rest lon1) lon2))]))
+
+;simplify (= (first lon1) (first lon2)) condition
+#;(define (merge lon1 lon2)
+    (cond [(empty? lon1) lon2]
+          [(empty? lon2) lon1]
+          [(= (first lon1) (first lon2))
+           (cons (first lon1)
+                 (merge (rest lon1) lon2))]
+          [(> (first lon1) (first lon2))
+           (cons (first lon2)
+                 (merge lon1 (rest lon2)))]
+          [(< (first lon1) (first lon2))
+           (cons (first lon1)
+                 (merge (rest lon1) lon2))]))
+
+; merge duplicate conditions
+#;(define (merge lon1 lon2)
+    (cond [(empty? lon1) lon2]
+          [(empty? lon2) lon1]
+          [(or (= (first lon1) (first lon2))
+               (< (first lon1) (first lon2)))
+           (cons (first lon1)
+                 (merge (rest lon1) lon2))]
+          [(> (first lon1) (first lon2))
+           (cons (first lon2)
+                 (merge lon1 (rest lon2)))]))
+
+; simplify with else
+(define (merge lon1 lon2)
+  (cond [(empty? lon1) lon2]
+        [(empty? lon2) lon1]
+        [(> (first lon1) (first lon2))
+         (cons (first lon2)
+               (merge lon1 (rest lon2)))]
+        [else
+         (cons (first lon1)
+               (merge (rest lon1) lon2))]))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 395 ====================
+
+; [X] [List-of X] Number -> [List-of X]
+; produce the first n items from the list or all of l if it is too short
+;(define (take l n) '()) ;stub
+
+(check-expect (take '() 1) '())
+(check-expect (take '(1) 1) '(1))
+(check-expect (take '(1 2 3) 2) '(1 2))
+(check-expect (take '(1 2 3) 5) '(1 2 3))
+
+(define (take l n)
+  (cond
+    [(or (empty? l)
+         (= n 0)) '()]
+    [else (cons (first l)
+                (take (rest l) (- n 1)))]))
+
+; [X] [List-of X] Number -> [List-of X]
+; produce a list with the first n items removed
+; or just ’() if list is too short
+;(define (drop l n) '()) ;stub
+
+(check-expect (drop '() 2) '())
+(check-expect (drop '(1) 1) '())
+(check-expect (drop '(1 2 3 4) 2) '(3 4))
+(check-expect (drop '(1 2 3 4) 5) '())
+
+; initial implementation
+#;(define (drop l n)
+    (cond [(or (empty? l)
+               (>= n (length l))) '()]
+          [(= n 0) l]
+          [else
+           (drop (rest l) (- n 1))]))
+
+; if we want simplicity over performance
+; (>= n (length l) could be removed
+(define (drop l n)
+  (cond [(empty? l) '()]
+        [(= n 0) l]
+        [else
+         (drop (rest l) (- n 1))]))
+
+
+; =================== End of exercise ==================
