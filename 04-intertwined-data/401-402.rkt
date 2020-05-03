@@ -1,7 +1,7 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname |401|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
-; ==================== Exercise 400 ====================
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 401-402) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+; ==================== Exercise 401 ====================
 
 ; An S-expr (S-expression) is one of: 
 ; – Atom
@@ -58,5 +58,15 @@
          (and
           (sexp=? (first s1) (first s2))
           (sexp=? (rest s1) (rest s2)))]))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 402 ====================
+
+it is helpful to think of an expression as an atomic value
+because it makes it easier to traverse given S-exp, in case
+of ex. 401 it was easier to make an atom? function and work
+with it separatley, I could have also made an SL (S-expr list)
+atomic value to target only lists of S-expr
 
 ; =================== End of exercise ==================
