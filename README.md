@@ -4,4 +4,24 @@ Documentation of my journey through [How to Design Programs, Second Edition](htt
 
 ![How to Design Programs book cover](https://htdp.org/htdp-2e-cover.gif)
 
+## Notes
+
+### Design recipe
+
+The book emphasizes a structured approach towards writing programs. It's a great alternative to the usual ad-hoc style seen in many places, this quote illustrates this really well:
+
+> All this sounds rather complex, and you might wonder why we don’t just muddle our way through, experimenting here and there, leaving well enough alone when the results look decent. This approach to programming, often dubbed “garage programming,” is common and succeeds on many occasions; sometimes it is the launching pad for a start-up company. Nevertheless, the start-up cannot sell the results of the “garage effort” because only the original programmers and their friends can use them. [source](https://htdp.org/2018-01-06/Book/part_one.html#%28part._ch~3ahtdp%29)
+
+#### The recipe
+
+1. Create a signature, a purpose statement and a stub of a function
+2. Write a function's template
+3. Write examples as test cases
+4. Code the body of the function
+5. Debug and refine
+
+It's a structured version of a TDD.
+
+---
+
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
