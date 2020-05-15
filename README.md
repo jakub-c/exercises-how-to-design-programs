@@ -28,5 +28,6 @@ It's a structured version of a TDD.
 
 - [ ] complete the missing exercises from [Intermezzo 4: The Nature of Numbers](https://htdp.org/2018-01-06/Book/i4-5.html)
 - [ ] edit, commit and push exercises from chapters 02 and 03
+- [ ] finish 449, write a helper function
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
