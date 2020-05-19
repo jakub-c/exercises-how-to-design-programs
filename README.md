@@ -30,5 +30,6 @@ It's a structured version of a TDD.
 - [ ] edit, commit and push exercises from chapters 02 and 03
 - [ ] finish 449, write a helper function
 - [ ] refactor 457 to something more readable and elegant
+- [ ] finish 460, 461
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
