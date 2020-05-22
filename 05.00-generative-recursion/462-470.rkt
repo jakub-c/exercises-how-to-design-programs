@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname |462|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 462-466) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 
 ; An SOE is a non-empty Matrix.
@@ -121,14 +121,17 @@
 (check-expect (subtract '(3 9 21) '(-3 -8 -19))
               '(1 2))
 
-(define (subtract eq1 eq2)
-  (local ((define operator (if (>= (first eq2) (first eq1))
-                               -
-                               +))
-          (define result (map operator eq2 eq1))
-          (define first-number (first result)))
-    (cond  [(= first-number 0) (rest result)]
-           [else (subtract eq1 result)])))
+(check-expect (subtract '(2 4 8 2) '(6 9 21 3))
+              '(-3 -3 -3))
+
+(define (subtract eq-1 eq-2)
+  (local
+    ((define factor (/ (first eq-2) (first eq-1))))
+
+    ; -- IN --
+    (for/list [(a (rest eq-1)) (b (rest eq-2))]
+      (- b (* a factor))          
+      )))
 
 ; =================== End of exercise ==================
 
@@ -170,6 +173,52 @@
         [else
          (cons (first M)
                (triangulate
+                (map (lambda (el) (subtract (first M) el))
+                     (rest M))))]))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 467 ====================
+
+(check-expect (triangulate.v2
+               '((2  3  3 8)
+                 (2  3 -2 3)
+                 (4 -2  2 4)))
+              '((2   3   3   8)
+                (   -8  -4  -12)
+                (       -5  -5)))
+
+(define (triangulate.v2 M)
+  (cond [(empty? M) '()]
+        [(= (first (first M)) 0)
+         (local ((define rotated-matrix (append (rest M) (list (first M)))))
+           (triangulate.v2 rotated-matrix))]
+        [else
+         (cons (first M)
+               (triangulate.v2
+                (map (lambda (el) (subtract (first M) el))
+                     (rest M))))]))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 468 ====================
+
+(check-error (triangulate.v3
+              '((2 2 2  6)
+                (2 2 4  8)
+                (2 2 1  2))))
+
+(define (triangulate.v3 M)
+  (cond [(empty? M) '()]
+        [; all leading coefficients are 0
+         (for/and ([el M]) (zero? (first el)))
+         (error "this system of equations does not have a sollution")]
+        [(= (first (first M)) 0)
+         (local ((define rotated-matrix (append (rest M) (list (first M)))))
+           (triangulate.v3 rotated-matrix))]
+        [else
+         (cons (first M)
+               (triangulate.v3
                 (map (lambda (el) (subtract (first M) el))
                      (rest M))))]))
 
