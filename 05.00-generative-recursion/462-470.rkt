@@ -292,3 +292,16 @@
            first-coefficient))))
 
 ; =================== End of exercise ==================
+
+; ==================== Exercise 470 ====================
+
+; SOE -> Solution
+; solve SOE using Gaussian Elimination
+; (define (gauss M) '()) ;stub
+
+(check-expect (gauss M) S)
+
+(define (gauss M)
+  (solve (triangulate.v3 M)))
+
+; =================== End of exercise ==================
