@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 462-466) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 462-470) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 (require 2htdp/abstraction)
 
 ; An SOE is a non-empty Matrix.
@@ -221,5 +221,66 @@
                (triangulate.v3
                 (map (lambda (el) (subtract (first M) el))
                      (rest M))))]))
+
+; =================== End of exercise ==================
+
+; ==================== Exercise 469 ====================
+
+; This could be solved via a foldr function as well
+; I might refactor it
+
+; TM -> [List-of Number]
+; solve a given SOE
+; (define (solve M) 0) ;stub
+
+(check-expect (solve '((2   3   3   8)
+                       (   -8  -4  -12)
+                       (       -5  -5)))
+              '(1 1 1))
+(check-expect (solve '((2  2  3   10) ; an Equation 
+                       (   3  9   21)
+                       (      1   2)))
+              '(1 1 2))
+
+(check-expect (solve '((3  9   21)
+                       (   1   2)))
+              '(1 2))
+(check-expect (solve '((-5 -5)))
+              '(1))
+
+(define (solve M)
+  (local ((define (solve-tri tri sol)
+            (local ((define solved-eq-value (solve-eq (first tri) sol)))
+              (cond [(empty? tri) '()]
+                    [(= 1 (length tri)) solved-eq-value]
+                    [else
+                     (append solved-eq-value
+                             (solve-tri (rest tri)
+                                        (append solved-eq-value sol)))]))))
+    (reverse (solve-tri (reverse M) '()))))
+
+; Equation Solution -> Number
+; (define (solve-eq eq sol) 0) ;stub
+
+(check-expect (solve-eq '(2 2 3 10) '(1 2))
+              '(1))
+(check-expect (solve-eq '(-8 -4 -12) '(1))
+              '(1))
+(check-expect (solve-eq '(1 2) '())
+              '(2))
+
+(define (solve-eq eq solution)
+  (local ((define first-coefficient (first eq))
+          (define coefficients-to-solve (rest (lhs eq)))
+          (define coefficients-plugged-values
+            (foldr (lambda (coefficient value result)
+                     (+ result (* coefficient value)))
+                   0
+                   coefficients-to-solve
+                   solution))
+          (define rhs-val (rhs eq)))
+    (list (/
+           (- rhs-val coefficients-plugged-values)
+           first-coefficient))))
 
 ; =================== End of exercise ==================
