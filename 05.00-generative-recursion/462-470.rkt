@@ -248,7 +248,15 @@
 (check-expect (solve '((-5 -5)))
               '(1))
 
-(define (solve M)
+(define (solve TM)
+  (foldr (lambda (eq solution)
+           (append (solve-eq eq solution) solution))
+         '()
+         TM))
+
+; this is an old soltution, without foldr
+; clearly it's way worse and more convoluted than the simpler one above
+#;(define (solve M)
   (local ((define (solve-tri tri sol)
             (local ((define solved-eq-value (solve-eq (first tri) sol)))
               (cond [(empty? tri) '()]
