@@ -128,3 +128,39 @@
 ; goes into infinite loop
 
 ; =================== End of exercise ==================
+
+; ==================== Exercise 474 ====================
+
+; Node Node Graph -> [Maybe Path]
+; finds a path from origination to destination in G
+; if there is no path, the function produces #false
+#; (define (find-path.v2 origination destination G)
+     #false)
+
+(check-expect (find-path.v2 'C 'D sample-graph)
+              '(C D))
+(check-member-of (find-path.v2 'E 'D sample-graph)
+                 '(E F D) '(E C D))
+(check-expect (find-path.v2 'C 'G sample-graph)
+              #false)
+
+(define (find-path.v2 origination destination G)
+  (local ((define (find-path.v2/list lo-Os D G)
+            (cond
+              [(empty? lo-Os) #false]
+              [else (local ((define candidate
+                              (find-path.v2 (first lo-Os) D G)))
+                      (cond
+                        [(boolean? candidate)
+                         (find-path.v2/list (rest lo-Os) D G)]
+                        [else candidate]))])))
+    (cond
+      [(symbol=? origination destination) (list destination)]
+      [else (local ((define next (neighbors origination G))
+                    (define candidate
+                      (find-path.v2/list next destination G)))
+              (cond
+                [(boolean? candidate) #false]
+                [else (cons origination candidate)]))])))
+
+; =================== End of exercise ==================
