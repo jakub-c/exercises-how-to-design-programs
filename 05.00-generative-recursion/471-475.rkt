@@ -164,3 +164,40 @@
                 [else (cons origination candidate)]))])))
 
 ; =================== End of exercise ==================
+
+; ==================== Exercise 475 ====================
+
+; Node Node Graph -> [Maybe Path]
+; finds a path from origination to destination in G
+; if there is no path, the function produces #false
+#; (define (find-path.v3 origination destination G)
+     #false)
+
+(check-expect (find-path.v3 'C 'D sample-graph)
+              '(C D))
+(check-member-of (find-path.v3 'E 'D sample-graph)
+                 '(E F D) '(E C D))
+(check-expect (find-path.v3 'C 'G sample-graph)
+              #false)
+
+(define (find-path.v3 origination destination G)
+  (local ((define (find-path.v3/list lo-Os D G)
+            (cond
+              [(empty? lo-Os) #false]
+              [else
+               (foldr (lambda (el acc)
+                        (if (list? acc)
+                            acc
+                            (find-path.v3 el D G)))
+                      #false
+                      lo-Os)])))
+    (cond
+      [(symbol=? origination destination) (list destination)]
+      [else (local ((define next (neighbors origination G))
+                    (define candidate
+                      (find-path.v3/list next destination G)))
+              (cond
+                [(boolean? candidate) #false]
+                [else (cons origination candidate)]))])))
+
+; =================== End of exercise ==================
