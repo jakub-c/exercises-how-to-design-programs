@@ -31,6 +31,7 @@ It's a structured version of a TDD.
 - [ ] finish 449, write a helper function
 - [ ] refactor 457 to something more readable and elegant
 - [ ] finish 460, 461
+- [ ] refactor 476, make it more functional and readable
 - [X] ~~refactor 469 to fold~~
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
