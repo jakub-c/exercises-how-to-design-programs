@@ -33,6 +33,10 @@ It's a structured version of a TDD.
 - [ ] finish 460, 461
 - [ ] refactor 476, make it more functional and readable
 - [ ] finish 477
+- [ ] add a note based on [Concrete Time, Abstract Time](https://htdp.org/2018-01-06/Book/i5-6.html#%28part._.Concrete_.Time__.Abstract_.Time%29)
+  - describe "order of n steps” phrase
+  - describe "abstract running time"
+  - note that we measure the performance of a program by looking at the number of recursive calls its making
 - [X] ~~refactor 469 to fold~~
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
