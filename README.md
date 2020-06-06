@@ -26,6 +26,8 @@ It's a structured version of a TDD.
 
 ### TODO
 
+- [ ] add notes about natural, structural and generative recursion
+- [ ] add notes about accumulators
 - [ ] complete the missing exercises from [Intermezzo 4: The Nature of Numbers](https://htdp.org/2018-01-06/Book/i4-5.html)
 - [ ] edit, commit and push exercises from chapters 02 and 03
 - [ ] finish 449, write a helper function
@@ -37,6 +39,8 @@ It's a structured version of a TDD.
   - describe "order of n steps” phrase
   - describe "abstract running time"
   - note that we measure the performance of a program by looking at the number of recursive calls its making
+  - add missing exercises from Intermezzo 5: The Cost of Computation
+- [ ] finish 492
 - [X] ~~refactor 469 to fold~~
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
