@@ -41,6 +41,7 @@ It's a structured version of a TDD.
   - note that we measure the performance of a program by looking at the number of recursive calls its making
   - add missing exercises from Intermezzo 5: The Cost of Computation
 - [ ] finish 492
+- [ ] finish 498
 - [X] ~~refactor 469 to fold~~
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
