@@ -42,6 +42,9 @@ It's a structured version of a TDD.
   - add missing exercises from Intermezzo 5: The Cost of Computation
 - [ ] finish 492
 - [ ] finish 498
+- [ ] finish 524
+- [ ] finish 526
+- [ ] finish 528
 - [X] ~~refactor 469 to fold~~
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
