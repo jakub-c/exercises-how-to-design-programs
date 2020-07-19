@@ -29,7 +29,6 @@ It's a structured version of a TDD.
 - [ ] add notes about natural, structural and generative recursion
 - [ ] add notes about accumulators
 - [ ] complete the missing exercises from [Intermezzo 4: The Nature of Numbers](https://htdp.org/2018-01-06/Book/i4-5.html)
-- [ ] edit, commit and push exercises from chapters 02 and 03
 - [ ] finish 449, write a helper function
 - [ ] refactor 457 to something more readable and elegant
 - [ ] finish 460, 461
@@ -46,5 +45,6 @@ It's a structured version of a TDD.
 - [ ] finish 526
 - [ ] finish 528
 - [X] ~~refactor 469 to fold~~
+- [X] ~~edit, commit and push exercises from chapters 02 and 03~~
 
 Special thanks to [bgusach/exercises-htdp2e](https://github.com/bgusach/exercises-htdp2e) for publishing the journey through the book. It helped when I got stuck on some exercises.
