@@ -1,0 +1,2009 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Date</key><date>2019-10-08T11:50:15Z</date>
+	<key>Application Version</key><string>12.9.5.5</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/</string>
+	<key>Library Persistent ID</key><string>57FA23120A79D299</string>
+	<key>Tracks</key>
+	<dict>
+		<key>82</key>
+		<dict>
+			<key>Track ID</key><integer>82</integer>
+			<key>Name</key><string>Drone Zone [SomaFM]</string>
+			<key>Kind</key><string>Internet audio stream</string>
+			<key>Date Added</key><date>2018-06-05T07:53:38Z</date>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>42</integer>
+			<key>Play Date</key><integer>3652165877</integer>
+			<key>Play Date UTC</key><date>2019-09-24T08:31:17Z</date>
+			<key>Persistent ID</key><string>0D813D581F643873</string>
+			<key>Track Type</key><string>URL</string>
+			<key>Location</key><string>http://ice1.somafm.com/dronezone-128-aac</string>
+		</dict>
+		<key>86</key>
+		<dict>
+			<key>Track ID</key><integer>86</integer>
+			<key>Name</key><string>dronezone-128-aac</string>
+			<key>Kind</key><string>Internet audio stream</string>
+			<key>Date Added</key><date>2019-03-06T16:13:01Z</date>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>12</integer>
+			<key>Play Date</key><integer>3652785446</integer>
+			<key>Play Date UTC</key><date>2019-10-01T12:37:26Z</date>
+			<key>Persistent ID</key><string>53A743329784C7EE</string>
+			<key>Track Type</key><string>URL</string>
+			<key>Location</key><string>http://ice4.somafm.com/dronezone-128-aac</string>
+		</dict>
+		<key>357</key>
+		<dict>
+			<key>Track ID</key><integer>357</integer>
+			<key>Name</key><string>The Inverse Mirror</string>
+			<key>Artist</key><string>Weldroid</string>
+			<key>Album</key><string>Regenerative</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>20481886</integer>
+			<key>Total Time</key><integer>375170</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-08-17T09:29:24Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Name</key><string>Inverse Mirror</string>
+			<key>Persistent ID</key><string>FDAE0AEC6C0F4BB2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Weldroid/Regenerative/02%20The%20Inverse%20Mirror.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>362</key>
+		<dict>
+			<key>Track ID</key><integer>362</integer>
+			<key>Name</key><string>Capsule</string>
+			<key>Artist</key><string>Weldroid</string>
+			<key>Album</key><string>Regenerative</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>20040940</integer>
+			<key>Total Time</key><integer>364146</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-08-17T09:29:16Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>619329A5B3116521</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Weldroid/Regenerative/01%20Capsule.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>365</key>
+		<dict>
+			<key>Track ID</key><integer>365</integer>
+			<key>Name</key><string>Paraverse</string>
+			<key>Artist</key><string>Weldroid</string>
+			<key>Album</key><string>Regenerative</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>22045054</integer>
+			<key>Total Time</key><integer>414249</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-08-17T09:29:32Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2B61C4C1C4D530F5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Weldroid/Regenerative/03%20Paraverse.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>368</key>
+		<dict>
+			<key>Track ID</key><integer>368</integer>
+			<key>Name</key><string>Function</string>
+			<key>Artist</key><string>Weldroid</string>
+			<key>Album</key><string>Regenerative</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16089135</integer>
+			<key>Total Time</key><integer>265351</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-08-17T09:30:06Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>3A6E9B301CB11242</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Weldroid/Regenerative/07%20Function.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>371</key>
+		<dict>
+			<key>Track ID</key><integer>371</integer>
+			<key>Name</key><string>Icicles</string>
+			<key>Artist</key><string>Weldroid</string>
+			<key>Album</key><string>Regenerative</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>23757642</integer>
+			<key>Total Time</key><integer>457064</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-08-17T09:29:58Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>72504B3F97C65152</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Weldroid/Regenerative/06%20Icicles.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>374</key>
+		<dict>
+			<key>Track ID</key><integer>374</integer>
+			<key>Name</key><string>Lamellar</string>
+			<key>Artist</key><string>Weldroid</string>
+			<key>Album</key><string>Regenerative</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>22756629</integer>
+			<key>Total Time</key><integer>432039</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-08-17T09:29:40Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>088BE8DCFEA74E9D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Weldroid/Regenerative/04%20Lamellar.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>377</key>
+		<dict>
+			<key>Track ID</key><integer>377</integer>
+			<key>Name</key><string>Innocence</string>
+			<key>Artist</key><string>Weldroid</string>
+			<key>Album</key><string>Regenerative</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>22202833</integer>
+			<key>Total Time</key><integer>418194</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-08-17T09:29:48Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>6A8146C558E05CEA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Weldroid/Regenerative/05%20Innocence.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>380</key>
+		<dict>
+			<key>Track ID</key><integer>380</integer>
+			<key>Name</key><string>Cob Backwards</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14373156</integer>
+			<key>Total Time</key><integer>349152</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:28:18Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>600F1146164B9CC2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/02%20Cob%20Backwards.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>383</key>
+		<dict>
+			<key>Track ID</key><integer>383</integer>
+			<key>Name</key><string>Origins</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>13550612</integer>
+			<key>Total Time</key><integer>323448</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:29:52Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8EBE21B32A813487</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/10%20Origins.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>386</key>
+		<dict>
+			<key>Track ID</key><integer>386</integer>
+			<key>Name</key><string>Cricket Pit</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10958607</integer>
+			<key>Total Time</key><integer>242448</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:28:08Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E4723AAF5E927822</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/01%20Cricket%20Pit.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>389</key>
+		<dict>
+			<key>Track ID</key><integer>389</integer>
+			<key>Name</key><string>Nordic Harmony</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14679938</integer>
+			<key>Total Time</key><integer>358739</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:29:02Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>699144CFD2D120CB</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/06%20Nordic%20Harmony.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>392</key>
+		<dict>
+			<key>Track ID</key><integer>392</integer>
+			<key>Name</key><string>Standalone Serenity</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>13868559</integer>
+			<key>Total Time</key><integer>333384</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:28:30Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>6AD806D4E92F0EDA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/03%20Standalone%20Serenity.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>395</key>
+		<dict>
+			<key>Track ID</key><integer>395</integer>
+			<key>Name</key><string>Waldorf Salad along here</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11410191</integer>
+			<key>Total Time</key><integer>256560</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:29:18Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F1D8FD10FD8302E4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/07%20Waldorf%20Salad%20along%20here.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>398</key>
+		<dict>
+			<key>Track ID</key><integer>398</integer>
+			<key>Name</key><string>Industrial Incident</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11998312</integer>
+			<key>Total Time</key><integer>274938</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:28:40Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8F6B4AC17F3E1059</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/04%20Industrial%20Incident.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>401</key>
+		<dict>
+			<key>Track ID</key><integer>401</integer>
+			<key>Name</key><string>The Rusty Key</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12162063</integer>
+			<key>Total Time</key><integer>280056</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:28:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>48000</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Name</key><string>Rusty Key</string>
+			<key>Persistent ID</key><string>76194EE3B838F4D3</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/05%20The%20Rusty%20Key.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>404</key>
+		<dict>
+			<key>Track ID</key><integer>404</integer>
+			<key>Name</key><string>She danced on the sand</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15348673</integer>
+			<key>Total Time</key><integer>379637</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:29:32Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>9EAF5D6F9F0532E2</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/08%20She%20danced%20on%20the%20sand.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>407</key>
+		<dict>
+			<key>Track ID</key><integer>407</integer>
+			<key>Name</key><string>Find the shape</string>
+			<key>Artist</key><string>4T Thieves and Pandacetamol</string>
+			<key>Album</key><string>She danced on the sand</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10278828</integer>
+			<key>Total Time</key><integer>221204</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-10T05:29:44Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>42915BC62ABB7FFE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/4T%20Thieves%20and%20Pandacetamol/She%20danced%20on%20the%20sand/09%20Find%20the%20shape.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>410</key>
+		<dict>
+			<key>Track ID</key><integer>410</integer>
+			<key>Name</key><string>Abstraphysics</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14080237</integer>
+			<key>Total Time</key><integer>282044</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>83B889E9CF910E11</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/07%20Abstraphysics.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>413</key>
+		<dict>
+			<key>Track ID</key><integer>413</integer>
+			<key>Name</key><string>Stupix Sheex</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>9855714</integer>
+			<key>Total Time</key><integer>176431</integer>
+			<key>Track Number</key><integer>13</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>02E7E756D24F89DE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/13%20Stupix%20Sheex.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>416</key>
+		<dict>
+			<key>Track ID</key><integer>416</integer>
+			<key>Name</key><string>Flying 3/4</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>13978876</integer>
+			<key>Total Time</key><integer>279510</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>96F3F964C0A80406</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/09%20Flying%203_4.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>419</key>
+		<dict>
+			<key>Track ID</key><integer>419</integer>
+			<key>Name</key><string>Moondo</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10817007</integer>
+			<key>Total Time</key><integer>200463</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:48Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>B62332E6F762C3B5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/03%20Moondo.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>422</key>
+		<dict>
+			<key>Track ID</key><integer>422</integer>
+			<key>Name</key><string>Robo Erectus</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16908774</integer>
+			<key>Total Time</key><integer>352757</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:48Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>B33CF04CB077C7C1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/02%20Robo%20Erectus.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>425</key>
+		<dict>
+			<key>Track ID</key><integer>425</integer>
+			<key>Name</key><string>Planemo</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>9362511</integer>
+			<key>Total Time</key><integer>164101</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>B2D6E68E920E5B0C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/06%20Planemo.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>428</key>
+		<dict>
+			<key>Track ID</key><integer>428</integer>
+			<key>Name</key><string>Childboot</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>14150238</integer>
+			<key>Total Time</key><integer>283794</integer>
+			<key>Track Number</key><integer>10</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>0ABD2E0544138F6C</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/10%20Childboot.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>431</key>
+		<dict>
+			<key>Track ID</key><integer>431</integer>
+			<key>Name</key><string>Polypodium</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11144068</integer>
+			<key>Total Time</key><integer>208640</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>F97D93755F97DD1A</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/04%20Polypodium.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>434</key>
+		<dict>
+			<key>Track ID</key><integer>434</integer>
+			<key>Name</key><string>Byvalidni</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6999693</integer>
+			<key>Total Time</key><integer>145005</integer>
+			<key>Track Number</key><integer>15</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-07-05T16:10:38Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>22DA68CE5F646FF7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/15%20Byvalidni.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>437</key>
+		<dict>
+			<key>Track ID</key><integer>437</integer>
+			<key>Name</key><string>Meteo Dreams</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12208823</integer>
+			<key>Total Time</key><integer>235258</integer>
+			<key>Track Number</key><integer>8</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>CE02F5105A481422</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/08%20Meteo%20Dreams.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>440</key>
+		<dict>
+			<key>Track ID</key><integer>440</integer>
+			<key>Name</key><string>Quietmint</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15413520</integer>
+			<key>Total Time</key><integer>315376</integer>
+			<key>Track Number</key><integer>14</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>FA6BCA9AC7B53063</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/14%20Quietmint.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>443</key>
+		<dict>
+			<key>Track ID</key><integer>443</integer>
+			<key>Name</key><string>Whole hole explorer</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10891220</integer>
+			<key>Total Time</key><integer>202318</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:48Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>3511769C689416AF</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/01%20Whole%20hole%20explorer.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>446</key>
+		<dict>
+			<key>Track ID</key><integer>446</integer>
+			<key>Name</key><string>Octopussy</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>16002842</integer>
+			<key>Total Time</key><integer>330109</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>78199E91C11752AE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/11%20Octopussy.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>449</key>
+		<dict>
+			<key>Track ID</key><integer>449</integer>
+			<key>Name</key><string>Looped Thought</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>15556680</integer>
+			<key>Total Time</key><integer>318955</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E64B18BE55861057</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/05%20Looped%20Thought.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>452</key>
+		<dict>
+			<key>Track ID</key><integer>452</integer>
+			<key>Name</key><string>Corvus Comix</string>
+			<key>Artist</key><string>elAstrum</string>
+			<key>Album</key><string>Freqmod</string>
+			<key>Genre</key><string>Oldskool</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>13132514</integer>
+			<key>Total Time</key><integer>258351</integer>
+			<key>Track Number</key><integer>12</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-04-22T10:43:50Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>7D3DBF89166F84E4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/elAstrum/Freqmod/12%20Corvus%20Comix.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>455</key>
+		<dict>
+			<key>Track ID</key><integer>455</integer>
+			<key>Name</key><string>Folding Rna</string>
+			<key>Artist</key><string>Hardwired</string>
+			<key>Album</key><string>Liminal</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>10874265</integer>
+			<key>Total Time</key><integer>297978</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-13T03:24:28Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2C176B5C50477455</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Hardwired/Liminal/02%20Folding%20Rna.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>458</key>
+		<dict>
+			<key>Track ID</key><integer>458</integer>
+			<key>Name</key><string>Angular</string>
+			<key>Artist</key><string>Hardwired</string>
+			<key>Album</key><string>Liminal</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5372250</integer>
+			<key>Total Time</key><integer>126040</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-13T03:24:16Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>34894CA0C2808F4F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Hardwired/Liminal/01%20Angular.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>461</key>
+		<dict>
+			<key>Track ID</key><integer>461</integer>
+			<key>Name</key><string>2nd last dream</string>
+			<key>Artist</key><string>Hardwired</string>
+			<key>Album</key><string>Liminal</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4092459</integer>
+			<key>Total Time</key><integer>86047</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-13T03:24:44Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>46C903D6FA32858F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Hardwired/Liminal/04%202nd%20last%20dream.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>464</key>
+		<dict>
+			<key>Track ID</key><integer>464</integer>
+			<key>Name</key><string>3rd last dream</string>
+			<key>Artist</key><string>Hardwired</string>
+			<key>Album</key><string>Liminal</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>20987205</integer>
+			<key>Total Time</key><integer>614008</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-13T03:25:14Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>16A1BE36E10D68B1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Hardwired/Liminal/07%203rd%20last%20dream.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>467</key>
+		<dict>
+			<key>Track ID</key><integer>467</integer>
+			<key>Name</key><string>Kingdom of</string>
+			<key>Artist</key><string>Hardwired</string>
+			<key>Album</key><string>Liminal</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3901034</integer>
+			<key>Total Time</key><integer>80065</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-13T03:25:04Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>955F40C00FB668F5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Hardwired/Liminal/06%20Kingdom%20of.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>470</key>
+		<dict>
+			<key>Track ID</key><integer>470</integer>
+			<key>Name</key><string>Fathers Day</string>
+			<key>Artist</key><string>Hardwired</string>
+			<key>Album</key><string>Liminal</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11736097</integer>
+			<key>Total Time</key><integer>324911</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-13T03:24:54Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>90027C107D2EC40E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Hardwired/Liminal/05%20Fathers%20Day.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>473</key>
+		<dict>
+			<key>Track ID</key><integer>473</integer>
+			<key>Name</key><string>For the dinner</string>
+			<key>Artist</key><string>Hardwired</string>
+			<key>Album</key><string>Liminal</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11751143</integer>
+			<key>Total Time</key><integer>325381</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-05-13T03:24:34Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>256</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>BC1F35C5D456B9FC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Hardwired/Liminal/03%20For%20the%20dinner.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>476</key>
+		<dict>
+			<key>Track ID</key><integer>476</integer>
+			<key>Name</key><string>Damask</string>
+			<key>Artist</key><string>Fa Le Brou</string>
+			<key>Album</key><string>Penrose</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12104716</integer>
+			<key>Total Time</key><integer>248058</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-06-14T11:08:14Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>55237576C42DE4D6</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Fa%20Le%20Brou/Penrose/01%20Damask.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>479</key>
+		<dict>
+			<key>Track ID</key><integer>479</integer>
+			<key>Name</key><string>She Cares Less</string>
+			<key>Artist</key><string>Fa Le Brou</string>
+			<key>Album</key><string>Penrose</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11904096</integer>
+			<key>Total Time</key><integer>243043</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-06-14T11:08:48Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>D60789DE0F5377C4</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Fa%20Le%20Brou/Penrose/05%20She%20Cares%20Less.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>482</key>
+		<dict>
+			<key>Track ID</key><integer>482</integer>
+			<key>Name</key><string>Nightlights</string>
+			<key>Artist</key><string>Fa Le Brou</string>
+			<key>Album</key><string>Penrose</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>19304063</integer>
+			<key>Total Time</key><integer>428042</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-06-14T11:08:40Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>E4842CF06E4BB43F</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Fa%20Le%20Brou/Penrose/04%20Nightlights.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>485</key>
+		<dict>
+			<key>Track ID</key><integer>485</integer>
+			<key>Name</key><string>Living In</string>
+			<key>Artist</key><string>Fa Le Brou</string>
+			<key>Album</key><string>Penrose</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>12984520</integer>
+			<key>Total Time</key><integer>270053</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-06-14T11:08:22Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>FB61605148455A48</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Fa%20Le%20Brou/Penrose/02%20Living%20In.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>488</key>
+		<dict>
+			<key>Track ID</key><integer>488</integer>
+			<key>Name</key><string>Missing You</string>
+			<key>Artist</key><string>Fa Le Brou</string>
+			<key>Album</key><string>Penrose</string>
+			<key>Genre</key><string>Electronic</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11824683</integer>
+			<key>Total Time</key><integer>241057</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-06-14T11:08:30Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>208EAD3AABF61231</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/Fa%20Le%20Brou/Penrose/03%20Missing%20You.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>491</key>
+		<dict>
+			<key>Track ID</key><integer>491</integer>
+			<key>Name</key><string>ADA</string>
+			<key>Artist</key><string>NNYz?</string>
+			<key>Album</key><string>Automation</string>
+			<key>Genre</key><string>Glitch</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8897084</integer>
+			<key>Total Time</key><integer>203493</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-09-09T04:04:36Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>BD9F738CB31440AE</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/NNYz_/Automation/06%20ADA.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>494</key>
+		<dict>
+			<key>Track ID</key><integer>494</integer>
+			<key>Name</key><string>Rahjak</string>
+			<key>Artist</key><string>NNYz?</string>
+			<key>Album</key><string>Automation</string>
+			<key>Genre</key><string>Glitch</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7979670</integer>
+			<key>Total Time</key><integer>180558</integer>
+			<key>Track Number</key><integer>4</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-09-09T04:04:36Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>2F7239F96A425859</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/NNYz_/Automation/04%20Rahjak.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>497</key>
+		<dict>
+			<key>Track ID</key><integer>497</integer>
+			<key>Name</key><string>The View</string>
+			<key>Artist</key><string>NNYz?</string>
+			<key>Album</key><string>Automation</string>
+			<key>Genre</key><string>Glitch</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8960833</integer>
+			<key>Total Time</key><integer>205087</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-09-09T04:04:36Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Sort Name</key><string>View</string>
+			<key>Persistent ID</key><string>14F7DD097384AEAC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/NNYz_/Automation/02%20The%20View.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>500</key>
+		<dict>
+			<key>Track ID</key><integer>500</integer>
+			<key>Name</key><string>Indo</string>
+			<key>Artist</key><string>NNYz?</string>
+			<key>Album</key><string>Automation</string>
+			<key>Genre</key><string>Glitch</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4172058</integer>
+			<key>Total Time</key><integer>85368</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-09-09T04:04:36Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>EA76D24A676AB336</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/NNYz_/Automation/01%20Indo.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>503</key>
+		<dict>
+			<key>Track ID</key><integer>503</integer>
+			<key>Name</key><string>Xscape</string>
+			<key>Artist</key><string>NNYz?</string>
+			<key>Album</key><string>Automation</string>
+			<key>Genre</key><string>Glitch</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>7571115</integer>
+			<key>Total Time</key><integer>170344</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-09-09T04:04:36Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>6BB971EBA0A03167</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/NNYz_/Automation/03%20Xscape.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>506</key>
+		<dict>
+			<key>Track ID</key><integer>506</integer>
+			<key>Name</key><string>Fireside</string>
+			<key>Artist</key><string>NNYz?</string>
+			<key>Album</key><string>Automation</string>
+			<key>Genre</key><string>Glitch</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11141535</integer>
+			<key>Total Time</key><integer>259604</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-09-09T04:04:36Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>311272F8861EAA39</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/NNYz_/Automation/05%20Fireside.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>509</key>
+		<dict>
+			<key>Track ID</key><integer>509</integer>
+			<key>Name</key><string>Entropy</string>
+			<key>Artist</key><string>NNYz?</string>
+			<key>Album</key><string>Automation</string>
+			<key>Genre</key><string>Glitch</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>9389239</integer>
+			<key>Total Time</key><integer>215797</integer>
+			<key>Track Number</key><integer>7</integer>
+			<key>Year</key><integer>2019</integer>
+			<key>Date Modified</key><date>2019-09-09T04:04:36Z</date>
+			<key>Date Added</key><date>2019-10-08T11:49:38Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>http://www.kahvi.org</string>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>77F0271935AFA73B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file:///Users/jc/Music/iTunes/iTunes%20Media/Music/NNYz_/Automation/07%20Entropy.mp3</string>
+			<key>File Folder Count</key><integer>5</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>Library</string>
+			<key>Description</key><string></string>
+			<key>Master</key><true/>
+			<key>Playlist ID</key><integer>92</integer>
+			<key>Playlist Persistent ID</key><string>D18ED2FBDC92DA0F</string>
+			<key>Visible</key><false/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>357</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>362</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>365</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>368</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>371</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>374</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>377</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>380</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>383</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>386</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>389</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>392</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>395</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>398</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>401</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>404</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>407</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>410</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>413</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>416</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>419</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>422</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>425</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>428</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>431</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>434</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>437</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>440</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>443</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>446</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>449</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>452</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>455</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>458</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>461</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>464</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>467</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>470</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>473</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>476</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>479</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>482</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>485</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>488</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>491</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>494</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>497</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>500</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>503</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>506</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>509</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Downloaded</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>96</integer>
+			<key>Playlist Persistent ID</key><string>0952384FD3DEA05D</string>
+			<key>Distinguished Kind</key><integer>65</integer>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>443</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>422</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>419</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>431</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>449</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>425</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>410</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>437</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>416</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>428</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>446</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>452</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>413</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>440</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>434</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>476</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>485</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>488</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>482</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>479</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>458</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>455</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>473</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>461</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>470</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>467</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>464</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>500</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>497</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>503</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>494</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>506</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>491</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>509</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>362</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>357</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>365</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>374</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>377</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>371</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>368</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>386</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>380</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>392</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>398</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>401</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>389</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>395</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>404</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>407</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>383</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Music</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>100</integer>
+			<key>Playlist Persistent ID</key><string>5E6952059AB8F36A</string>
+			<key>Distinguished Kind</key><integer>4</integer>
+			<key>Music</key><true/>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>443</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>422</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>419</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>431</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>449</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>425</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>410</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>437</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>416</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>428</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>446</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>452</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>413</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>440</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>434</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>476</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>485</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>488</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>482</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>479</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>458</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>455</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>473</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>461</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>470</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>467</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>464</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>500</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>497</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>503</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>494</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>506</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>491</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>509</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>362</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>357</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>365</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>374</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>377</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>371</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>368</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>386</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>380</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>392</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>398</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>401</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>389</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>395</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>404</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>407</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>383</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Downloaded</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>113</integer>
+			<key>Playlist Persistent ID</key><string>5CA6AA16D527B923</string>
+			<key>Distinguished Kind</key><integer>66</integer>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Films</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>116</integer>
+			<key>Playlist Persistent ID</key><string>B67BB5CDD4945FDE</string>
+			<key>Distinguished Kind</key><integer>2</integer>
+			<key>Movies</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Downloaded</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>122</integer>
+			<key>Playlist Persistent ID</key><string>22C31304EF20EBB8</string>
+			<key>Distinguished Kind</key><integer>67</integer>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>TV Programmes</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>125</integer>
+			<key>Playlist Persistent ID</key><string>AE76DEBC6063BE40</string>
+			<key>Distinguished Kind</key><integer>3</integer>
+			<key>TV Shows</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Podcasts</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>128</integer>
+			<key>Playlist Persistent ID</key><string>3EF1125AFB5505D0</string>
+			<key>Distinguished Kind</key><integer>10</integer>
+			<key>Podcasts</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Audiobooks</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>135</integer>
+			<key>Playlist Persistent ID</key><string>82F9D99827E3B6ED</string>
+			<key>Distinguished Kind</key><integer>5</integer>
+			<key>Audiobooks</key><true/>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>Genius</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>138</integer>
+			<key>Playlist Persistent ID</key><string>05C40BBAA8B57F8F</string>
+			<key>Distinguished Kind</key><integer>26</integer>
+			<key>All Items</key><true/>
+		</dict>
+		<dict>
+			<key>Name</key><string>90s Music</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>141</integer>
+			<key>Playlist Persistent ID</key><string>71EE00916BFF77CC</string>
+			<key>Distinguished Kind</key><integer>200</integer>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAAEAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAB8YAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAB88AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgFNMc3QAAQAB
+			AAAAAgAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAB
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPAAABAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAIAAAAAAAAAAA
+			AAAAAAAAAAEAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>Classical Music</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>144</integer>
+			<key>Playlist Persistent ID</key><string>F69CB3A5498F2FE6</string>
+			<key>Distinguished Kind</key><integer>206</integer>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAU0xzdAABAAEAAAACAAAAAQAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAADwAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAABEAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAg
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVxTTHN0AAEAAQAAABEAAAAB
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAACAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAABIAQwBsAGEAcwBzAGkAYwBhAGwAAAAIAQAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABLAGwAYQBzAHMAaQBlAGsAAAAI
+			AQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgBD
+			AGwAYQBzAHMAaQBxAHUAZQAAAAgBAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAOAEsAbABhAHMAcwBpAGsAAAAIAQAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABDAGwAYQBzAHMAaQBjAGEAAAAI
+			AQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACjCv
+			MOkwtzDDMK8AAAAIAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAADgBDAGwA4QBzAGkAYwBhAAAACAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAASwBsAGEAcwBzAGkAcwBrAAAACAEAAAEAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAQwBsAOEAcwBz
+			AGkAYwBhAAAACAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAABIASwBsAGEAcwBzAGkAcwBrAHQAAAAIAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGAQaBDsEMARBBEEEOARHBDUEQQQ6BDAETwAA
+			AAgBAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAS
+			AEsAbABhAHMAeQBjAHoAbgBhAAAACAEAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAABIASwBsAGEAcwBzAGkAbgBlAG4AAAAIAQAAAQAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADABLAGwAYQBzAGkAawAA
+			AAgBAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAU
+			AEsAbABhAHMAcwB6AGkAawB1AHMAAAAIAQAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAFgBWAOEBfgBuAOEAIABoAHUAZABiAGEAAAAIAQAAAQAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgZDBkQGJwYz
+			BkoGQwZK
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>My Top Rated</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>147</integer>
+			<key>Playlist Persistent ID</key><string>BBCFD9AC9607F9A5</string>
+			<key>Distinguished Kind</key><integer>201</integer>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABkAAAAQAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAADwAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>Recently Played</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>150</integer>
+			<key>Playlist Persistent ID</key><string>43690DCB2E2A5703</string>
+			<key>Distinguished Kind</key><integer>203</integer>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEAAwAAAAIAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABcAAAIAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABELa4tri2uLa7//////////gAAAAAACTqA
+			La4tri2uLa4AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA5AgAAAQAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAB
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>Top 25 Most Played</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>153</integer>
+			<key>Playlist Persistent ID</key><string>8548449157F6EAE4</string>
+			<key>Distinguished Kind</key><integer>202</integer>
+			<key>All Items</key><true/>
+			<key>Smart Info</key>
+			<data>
+			AQEBAwAAABkAAAAZAAAAAAAAAAcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAA==
+			</data>
+			<key>Smart Criteria</key>
+			<data>
+			U0xzdAABAAEAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADkCAAABAAAAAAAAAAAAAAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABEAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAB
+			AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAAAEAAA
+			AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAA
+			AAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAA
+			AAAAAAAA
+			</data>
+		</dict>
+		<dict>
+			<key>Name</key><string>Internet Songs</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>156</integer>
+			<key>Playlist Persistent ID</key><string>D64C3604472B1474</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>82</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>86</integer>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>Name</key><string>Playlist</string>
+			<key>Description</key><string></string>
+			<key>Playlist ID</key><integer>161</integer>
+			<key>Playlist Persistent ID</key><string>7DE145756B61B0EF</string>
+			<key>All Items</key><true/>
+		</dict>
+	</array>
+</dict>
+</plist>
