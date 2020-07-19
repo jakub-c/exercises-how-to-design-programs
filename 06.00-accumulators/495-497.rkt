@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname |495|) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
+#reader(lib "htdp-intermediate-lambda-reader.ss" "lang")((modname 495-496) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f)))
 ; [List-of Number] -> Number
 
 (check-expect (sum.v1 '(1 2 3)) 6)
@@ -75,6 +75,8 @@
 
 ; =================== End of exercise ==================
 
+; ==================== Exercise 497 ====================
+
 (define (!.v1 n)
   (cond
     [(zero? n) 1]
@@ -82,3 +84,5 @@
 
 ; (time (map (lambda (_) (!.v1 20)) (range 1 1001 1)))
 ; takes 3 units of time
+
+; =================== End of exercise ==================
